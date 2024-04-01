@@ -3,7 +3,6 @@ import { IoCameraOutline } from "react-icons/io5";
 import Image from "next/image"
 import ThreeDCardDemo from "./Card3D"
 import DotBackgroundDemo from "@/ui/grid_bg";
-import { InfiniteMovingCards } from "@/ui/infinite_moving_card";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa6";
 import { FaReact } from "react-icons/fa";
