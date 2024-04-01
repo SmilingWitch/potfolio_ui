@@ -1,0 +1,237 @@
+.about{
+    position: relative;
+    
+    margin: 0 auto;
+
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #18181b;
+    /*border-top: 1px solid #0359d1;*/
+    background: transparent;
+   
+    
+}
+.aboutBx{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    width: 1000px;
+}
+.headerAbout{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.headerAbout h1{
+    position: relative;
+    font-size: var(--font-size-full);
+    color: var(--green); 
+    letter-spacing: 2px;  
+    font-size: 3.5em;
+}
+/*}.outBorder{
+    position: relative;
+    padding: 10px;
+    border: 1px solid #0359d1;
+    height: 100%;
+    width: 500px;
+}*/
+.text{
+    width: 100%;
+    background: #1d1c20;
+    border-radius: 1rem;
+    /*border: 0 solid #e5e7eb;*/
+    /*border-top: 0.5px solid (229, 231, 235);
+    border-right:0.5px solid rgb(229, 231, 235);
+    border-bottom:0.5px solid #0359d1;
+    border-left:0.5px solid #0359d1;*/
+    padding: 20px;
+
+    font-size: 1.2rem;
+
+
+
+    /*border-left: 5px solid var(--green) ;*/
+}
+.text p{
+    color: var(--green) ;
+
+}
+.textResalt{
+    position: relative;
+
+    font-size: 2em;
+    color: #69433A;
+    padding-top: 50px;
+}
+.imageCont{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: rgb(249, 248, 236);
+    padding: 15px;
+    height: 250px;
+    width: 200px;
+    transform: rotate(-20deg);
+    box-shadow:  3px 3px 6px rgb(160, 159, 157);
+}
+
+.imageBx{
+    position: relative;
+    height: 150px;
+    width: 100%;
+    overflow: hidden;  
+    background-image: url("/images/PERFIL.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.iconBx{
+    position: relative;
+    color: rgb(249, 248, 236);
+    font-size: 2em;
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+    border: 3px solid rgb(249, 248, 236);
+    background: pink;
+    margin: 0 auto;
+}
+
+.imageText{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    bottom: 20px;
+
+    color: var(--green) ;
+}
+
+.skills{
+    position: relative;
+    width: 100%;
+    /*display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 10px;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.label{
+    color: #a3a3a3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.label span{
+    position: relative;
+    margin-top: 16px;
+    font-size: 1rem;
+}
+.header{
+    position: relative;
+    font-size: 2.5rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+}
+.headerAbout{
+    margin-bottom: 1rem;
+}
+
+.img{
+    position: relative;
+    margin: 0 auto;
+    border-radius: 10%;
+}
+
+
+
+
+
+@media(max-width: 1000px ){
+    .about{
+        width: 100%;
+    }
+    .aboutBx{
+        width: 90%;
+    }
+}
+@media(max-width:732px){
+    .aboutBx{
+        flex-direction: column;
+        
+    }
+    .headerAbout{
+        width: 100%;
+    }
+}
+@media(max-width:684px){
+
+    .headerAbout h1{
+     font-size: var(--font-size-middle);
+    }
+
+}
+@media(max-width:664px){
+    .skills{
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+
+    .labelBx{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        
+    }
+}
+@media(max-width:550px){
+    /*.headerAbout h1{
+     font-size: var(--font-size-short);
+    }*/
+    .labelBx{
+        grid-gap: 16px;
+        grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+    }
+    
+}
+@media(max-width:538px){
+    .skills{
+        grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    }
+}
+@media(max-width:460px){
+    .headerAbout h1{
+        font-size: var(--font-size-short);
+       }
+
+}
+
+
